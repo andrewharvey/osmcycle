@@ -1,0 +1,23 @@
+I followed the instructions from http://wiki.openstreetmap.org/wiki/Mapnik
+
+First I run,
+./generate_xml.py --host localhost --user user --dbname geodb --symbols ./symbols/ --world_boundaries ../world_boundaries/ --port 5432 --password 'password'
+
+Then I generate tiles using,
+MAPNIK_MAP_FILE="briscycle.xml" MAPNIK_TILE_DIR="tiles/" ./generate_tiles.py
+
+although I changed generate_tiles.py to look like this at the bottom,
+
+    #-------------------------------------------------------------------------
+    #
+    # Change the following for different bounding boxes and zoom levels
+    #
+    # Start with an overview
+    # World
+    bbox = (-180.0,-90.0, 180.0,90.0)
+
+    render_tiles(bbox, mapfile, tile_dir, 0, 5, "World")
+
+    # Sydney
+    bbox = (150.735,-34.367, 151.339,-33.381)
+    render_tiles(bbox, mapfile, tile_dir, 1, 17 , "Sydney")

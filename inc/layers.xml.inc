@@ -3,21 +3,21 @@
     <StyleName>world</StyleName>
     <Datasource>
       <Parameter name="type">shape</Parameter>
-      <Parameter name="file">/home/ash/Misc/Maps/world_boundaries/shoreline_300</Parameter>
+      <Parameter name="file">&world_boundaries;/shoreline_300</Parameter>
     </Datasource>
 </Layer>
 <Layer name="coast-poly" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>coast-poly</StyleName>
     <Datasource>
       <Parameter name="type">shape</Parameter>
-      <Parameter name="file">/home/ash/Misc/Maps/world_boundaries/processed_p</Parameter>
+      <Parameter name="file">&world_boundaries;/processed_p</Parameter>
     </Datasource>
 </Layer>
 <Layer name="builtup" status="on" srs="+proj=merc +datum=WGS84 +over">
     <StyleName>builtup</StyleName>
     <Datasource>
       <Parameter name="type">shape</Parameter>
-      <Parameter name="file">/home/ash/Misc/Maps/world_boundaries/builtup_area</Parameter>
+      <Parameter name="file">&world_boundaries;/builtup_area</Parameter>
     </Datasource>
 </Layer>
 
@@ -43,30 +43,6 @@
       ) as leisure
       </Parameter>
     </Datasource>
-</Layer>
-<Layer name="srtm_10" status="on" srs="+proj=latlong +datum=WGS84">
-        <StyleName>contours10</StyleName>
-        <StyleName>contours-text10</StyleName>
-        <Datasource>
-			&datasource-settings;
-                <Parameter name="table">(select way,height from contours WHERE height::integer % 10 = 0 AND height::integer % 50 != 0 AND height::integer % 100 != 0) as "contours-10"</Parameter>
-        </Datasource>
-</Layer>
-<Layer name="srtm_50" status="on" srs="+proj=latlong +datum=WGS84">
-        <StyleName>contours50</StyleName>
-        <StyleName>contours-text50</StyleName>
-        <Datasource>
-			&datasource-settings;
-                <Parameter name="table">(select way,height from contours WHERE height::integer % 50 = 0 AND height::integer % 100 != 0) as "contours-50"</Parameter>
-        </Datasource>
-</Layer>
-<Layer name="srtm_100" status="on" srs="+proj=latlong +datum=WGS84">
-        <StyleName>contours100</StyleName>
-        <StyleName>contours-text100</StyleName>
-        <Datasource>
-			&datasource-settings;
-                <Parameter name="table">(select way,height from contours WHERE height::integer % 100 = 0) as "contours-100"</Parameter>
-        </Datasource>
 </Layer>
 
 <Layer name="sports_grounds" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">

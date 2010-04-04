@@ -35,31 +35,28 @@
     <Rule>
       <Filter>[natural] = 'forest' or [natural] = 'wood'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/forest.png" type="png" width="16" height="16"/>
+      <PolygonPatternSymbolizer file= "&symbols;/forest.png" type="png" width="16" height="16"/>
     </Rule>
     <Rule>
       <Filter>[natural] = 'marsh' or [natural] = 'wetland'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/wetland.png" type="png" width="16" height="16"/>
+      <PolygonPatternSymbolizer file= "&symbols;/wetland.png" type="png" width="16" height="16"/>
     </Rule>
 </Style>
 
-
-
-%land-contours;
 
 <Style name="stations">
     <Rule>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>60000</MinScaleDenominator>
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file =  "/home/ash/Misc/ProgramFiles/mapnik/symbols/station_small.png" type="png" width="4" height="4" />
+      <PointSymbolizer file =  "&symbols;/station_small.png" type="png" width="4" height="4" />
       <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="9" fill="green" halo_radius="1" wrap_width="0"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>60000</MaxScaleDenominator>
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file =  "/home/ash/Misc/ProgramFiles/mapnik/symbols/station.png" type="png" width="16" height="16" />
+      <PointSymbolizer file =  "&symbols;/station.png" type="png" width="16" height="16" />
       <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="9" fill="green" halo_radius="1" wrap_width="0"/>
     </Rule>
 </Style>
@@ -67,60 +64,60 @@
     <Rule>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <Filter>[natural]='peak'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/peak.png" type="png" width="8" height="8" />
+      <PointSymbolizer file= "&symbols;/peak.png" type="png" width="8" height="8" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[highway]='gate' or [barrier]='gate'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/gate2.png" type="png" width="7" height="5" allow_overlap="false"/>
+      <PointSymbolizer file= "&symbols;/gate2.png" type="png" width="7" height="5" allow_overlap="false"/>
     </Rule>
 </Style>
 <Style name="points">
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[amenity]='shelter'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/shelter.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "&symbols;/shelter.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>30000</MaxScaleDenominator>
       <Filter>[amenity]='drinking_water'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/drinking-water.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "&symbols;/drinking-water.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[amenity]='toilets'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/toilets.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "&symbols;/toilets.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <Filter>[amenity]='bicycle_parking'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/bicycle.parking.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "&symbols;/bicycle.parking.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>[highway]='traffic_signals'</Filter>
-    <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/traffic_light.png" type="png" width="16" height="16" />
+    <PointSymbolizer file= "&symbols;/traffic_light.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
     <MaxScaleDenominator>20000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>[highway]='traffic_signals'</Filter>
-    <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/traffic_light_small.png" type="png" width="6" height="6" />
+    <PointSymbolizer file= "&symbols;/traffic_light_small.png" type="png" width="6" height="6" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <Filter>[amenity]='hospital'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/hospital.p.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "&symbols;/hospital.p.16.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[amenity]='telephone'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/telephone.p.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "&symbols;/telephone.p.16.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[tourism]='viewpoint'</Filter>
-      <PointSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/view_point.p.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "&symbols;/view_point.p.16.png" type="png" width="16" height="16" />
     </Rule>
 </Style>
 <Style name="cycle-routes-border">
@@ -332,7 +329,7 @@
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <Filter>[natural] = 'scrub'</Filter>
-      <PolygonPatternSymbolizer file= "/home/ash/Misc/ProgramFiles/mapnik/symbols/scrub.png" type="png" width="30" height="30"/>
+      <PolygonPatternSymbolizer file= "&symbols;/scrub.png" type="png" width="30" height="30"/>
     </Rule>
     <Rule>
       <Filter>[natural] = 'land'</Filter>
